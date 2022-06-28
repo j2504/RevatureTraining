@@ -1,0 +1,47 @@
+create table Employee(
+employee_id int primary key,                                   
+employee_name varchar(30),
+employee_email varchar(40),
+employee_salary decimal, 
+D_O_B date
+);
+
+--alter 
+--change the name of student email column to email
+alter table employee rename column employee_email to email;
+
+--add a column to student table
+alter table employee add column position varchar(50);
+
+-- insert values into student table
+insert into employee(employee_id, employee_name, employee_email, employee_salary, d_o_b) 
+	values(105, 'Jas Sadhir', 'jas@rev.com', 20000.00, '1987-12-19');
+
+
+-- select all rows and columns from student table
+select employee_id, employee_name  from employee;
+
+
+delete from employee where employee_id in (101);
+
+--to update all rows of the table
+update employee set d_o_b  = '1991-05-21' where employee_id = 102;
+
+
+update employee set position = 'Full stack developer' where employee_id = 102;
+
+-- delete from student table
+delete from employee where employee_id  = 105;
+
+delete from employee where employee_name = 'Jamari Grant';
+
+
+
+--drop
+-- delete the whole table
+drop table employee;
+
+
+
+
+
