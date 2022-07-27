@@ -17,7 +17,7 @@ import com.revature.expense.model.Reimbursement;
 /**
  * Servlet implementation class processForm
  */
-public class processForm extends HttpServlet {
+public class ProcessForm extends HttpServlet {
 	private static final long serialVersionUID = 1L;
        
     /**
